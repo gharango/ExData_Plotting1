@@ -1,5 +1,5 @@
 
-#get all data after unziping code
+#get all data from zipped file 
 setAs("character","myDate", function(from) as.Date(from, format="%d/%m/%Y") )
 A=read.csv2(unz("household_power_consumption.zip","household_power_consumption.txt"),header=TRUE,dec=".",colClasses=c("myDate","character","numeric","numeric","numeric","numeric","numeric","numeric","numeric"),na.strings=c("?",NA))
 
